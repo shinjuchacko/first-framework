@@ -9,7 +9,7 @@ public class GithubLoginPageTests extends BaseTestClass{
     void verifyLogin(){
         driver.get(MAIN_URL+"login");
         driver.findElement(By.name("login")).sendKeys("shinjuchacko@gmail.com");
-        driver.findElement(By.name("password")).sendKeys("hgggg");
+        driver.findElement(By.name("password")).sendKeys("abcd");
         driver.findElement(By.name("commit")).click();
         driver.findElement(By.cssSelector("button[data-login='shinjuchacko']")).click();
         String actual = driver.findElement(By.cssSelector(".lh-condensed [title=\"shinjuchacko\"]")).getText();
